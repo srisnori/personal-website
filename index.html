@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script defer src="https://vercel.live/analytics/script.js"></script>
+		<title>Sri Nori</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- NAVBAR -->
+		<div class="navbar">			
+			<div class="nav-left">
+				<a href="#">Sri Nori</a>
+			</div>
+			<div class="nav-right">
+				<a href="#one">Experience</a>
+				<a href="#two">Projects</a>
+				<a href="#three">Activities</a>
+			</div>
+		</div>
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				let lastScrollTop = 0; 
+	
+				function handleScroll() {
+					const navbar = document.querySelector('.navbar');
+					const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	
+					if (currentScrollTop > lastScrollTop) {
+						navbar.classList.add('hidden');
+					} else {
+						navbar.classList.remove('hidden');
+					}
+	
+					lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; 
+				}
+	
+				window.addEventListener('scroll', handleScroll);
+			});
+		</script>
+	
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon solid major fa-cloud"></span>
+					<style>
+						.typing-effect {
+							display: inline;
+							font-family: monospace;
+							white-space: nowrap;
+							overflow: hidden; 
+    						animation: blink-caret 0.75s step-end infinite; 
+							color: rgb(255, 255, 255); 
+    						border-right: 2px solid rgb(255, 255, 255);
+						}
+						
+						@keyframes typing {
+							from { width: 0; }
+							to { width: 100%; }
+						}
+
+						@keyframes blink-caret {
+							from, to { border-color: transparent; }
+							50% { border-color: rgb(255, 255, 255); }
+						}
+					</style>				
+					<h1 id="typewriter"></h1>
+					<script>
+						const text = "Hi, I'm Sri Nori 👋";
+						let index = 0;
+						const element = document.getElementById('typewriter');
+
+						function type() {
+							if (index < text.length) {
+								element.innerHTML += text.charAt(index);
+								index++;
+								setTimeout(type, 100); 
+							}
+						}
+
+						type();
+					</script>
+
+					<p>Computer Science and Engineering Student</p>
+					<p></p>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/srisnori" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/srisnori" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+					<ul class="actions special">
+						<li><a href="https://drive.google.com/file/d/1gfg5S7fvOt57DFHefRJZG_HowSxUup2B/view?usp=sharing" class="button scrolly">Resume</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+
+			<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<!-- Image Column -->
+						<div class="col-6 col-12-medium">
+							<span class="image fit"><img src="images/binary.gif" alt="" /></span>
+						</div>
+						<!-- Text Column -->
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Backend Developer</h2>
+							</header>
+							<ul>
+								<li>Building backend infrastructure for an AI-powered food waste reduction system</li>
+								<li>Extracting data from 500+ records in SQLite, to preprocess in cloud & store in MongoDB</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr/>
+
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>App Development Intern</h2>
+							</header>
+							<ul>
+								<li>Configured event modules and 10 communication channels on Connect app</li>
+								<li>Led monthly cross-platform testing, fixed 4 critical bugs, and enhanced UI/UX</li>
+								<li>Created documentation for platform configuration and bug fixes for the Connect app</li>
+							  </ul>
+													  </div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/code.gif" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr/>
+
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<!-- Image Column -->
+						<div class="col-6 col-12-medium">
+							<span class="image fit"><img src="images/coding.gif" alt="" /></span>
+						</div>
+						<!-- Text Column -->
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>ServiceNow Mobile App Development Intern</h2>
+							</header>
+							<ul>
+								<li>Building a barcode asset tracking app on ServiceNow, reducing tracking time by 50%</li>
+								<li>Optimizing SQL database operations to improve backend process efficiency</li>
+								<li>Designing UI components and creating documentation to streamline troubleshooting</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr/>
+
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Web Development Intern</h2>
+							</header>
+							<ul>
+								<li>Developed web content for 100+ monthly users with HTML, CSS, and JavaScript</li>
+								<li>Led an accessibility project, reducing issues by 30% and enhancing usability</li>
+								<li>Boosted teaching engagement by 40% in 100 classrooms using qualitative coding</li>
+							  </ul>
+													  </div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/im coding.gif" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr/>
+		
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<!-- Image Column -->
+						<div class="col-6 col-12-medium">
+							<span class="image fit"><img src="images/education.gif" alt="" /></span>
+						</div>
+						<!-- Text Column -->
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Programming and Math Instructor</h2>
+							</header>
+							<p>100+ hours of instruction teaching K-12 students Python, Java, C++, Javascript, HTML, Excel, Pre-
+								algebra, Algebra, Calculus, Amazon AHEAD courses</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+
+		<!-- Two -->
+		<section id="two" class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-12">
+						<h2 style="text-align: center;">Projects</h2>
+						<div class="row gtr-150" style="text-align: center;">
+							<div class="col-4 col-12-medium">
+								<span class="image fit"><img src="images/ticket.png" style="width: 70%; height: auto; display: block; margin: 0 auto;" alt="" /></span>
+								<h3>AWS Serverless URL Shortener</h3>
+								<p>Built a scalable, serverless URL shortener with AWS Lambda, API Gateway, DynamoDB, S3.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/srisnori/URL-Shortener" class="button">More</a></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-medium">
+								<span class="image fit"><img src="images/business.png" style="width: 70%; height: auto; display: block; margin: 0 auto;" alt="" /></span>
+								<h3>Business Retention Model</h3>
+								<p>Developed a customer churn model using ML 
+									with an accuracy of 80.1%, informing businesses of marketing strategies.</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/srisnori/Business-Rentention-Model/blob/main/Churn_Modelling%20(3).ipynb" class="button">More</a></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-medium">
+								<span class="image fit"><img src="images/inventory.png" style="width: 70%; height: auto; display: block; margin: 0 auto;" alt="" /></span>
+								<h3>Inventory Management App</h3>
+								<p>Developed a inventory tracker that empowers businesses and customers to manage inventory.</p>
+								<!-- <p>Developed a conversational chatbot using the Gemini API, designed to facilitate interactive dialogue with users.</p> -->
+								<ul class="actions special">
+									<li><a href="https://inventory-management-app-gamma-seven.vercel.app/" class="button">More</a></li>
+								</ul>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Three -->
+		<section id="three" class="main style1 special">
+			<div class="container">
+				<header class="major">
+					<h2>Activities</h2>
+					<h5 style="margin: 0; font-size: -3.5em;">Click to learn more</h5>
+				</header>
+				<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
+					<div style="flex: 1; text-align: center; padding: 15px; position: relative;">
+						<a href="https://sweucmerced.weebly.com/expanding-your-horizons.html" style="display: block; text-decoration: none; color: inherit; border: none">
+							<span style="display: block; margin-bottom: 10px;">
+								<img src="images/stem.png" alt="Activity One" style="max-width: 220px; height: auto;" />
+							</span>
+							<h3>STEM Education Volunteer</h3>
+						</a>
+						<div style="border-left: 2px solid #ddd; height: 100%; position: absolute; top: 0; right: 0;"></div>
+					</div>
+					<div style="flex: 1; text-align: center; padding: 15px; position: relative;">
+						<a href="https://hackmerced.com/" style="display: block; text-decoration: none; color: inherit; border: none">
+							<span style="display: block; margin-bottom: 10px;">
+								<img src="images/officer.png" alt="Activity Two" style="max-width: 197px; height: auto;" />
+							</span>
+							<h3>HackMerced X Tech Officer</h3>
+						</a>
+						<div style="border-left: 2px solid #ddd; height: 100%; position: absolute; top: 0; right: 0;"></div>
+					</div>
+					<div style="flex: 1; text-align: center; padding: 15px;">
+						<a href="https://devpost.com/software/relaxr?ref_content=my-projects-tab&ref_feature=my_projects" style="display: block; text-decoration: none; color: inherit; border: none">
+							<span style="display: block; margin-bottom: 10px;">
+								<img src="images/hackathon.png" alt="Activity Three" style="max-width: 189px; height: auto;" />
+							</span>
+							<h3 style="margin: 0; font-size: 1.5em;">Hackathon</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/srisnori" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/srisnori" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2025 Sri Nori</li></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>
